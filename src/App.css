@@ -1,0 +1,183 @@
+:root {
+  --primary: #2A6E37;    /* Classic Forest Green - Stability & Freshness */
+  --secondary: #8DB596;  /* Soft Sage Green - Calm & Natural */
+  --accent: #F8C537;     /* Warm Mustard Yellow - Energy & Action */
+  --light: #F8F9FA;      /* Off-White - Clean Background */
+  --dark: #2D3E30;       /* Dark Charcoal Green - For Text */
+  --success: #4CAF50;    /* Classic Green - Success */
+  --warning: #FF9800;    /* Amber - Warning */
+  --danger: #E53935;     /* Red - Danger */
+  --gray: #78907E;       /* Muted Green-Gray - Secondary Text */
+  --light-gray: #E8F5E9; /* Very Light Green - Subtle Backgrounds */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ✅ App container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ✅ Header section with brand colors */
+.App-header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--light);
+  text-align: center;
+}
+
+/* ✅ Logo animation */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ✅ Links updated */
+.App-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* ✅ Layout */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ✅ Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #245b2f;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background-color: #d6a72f;
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b02a27;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* ✅ Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✅ Forms */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+}

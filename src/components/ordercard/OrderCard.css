@@ -1,0 +1,65 @@
+/* components/OrderCard/OrderCard.css */
+.order-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .status.pending {
+    background-color: var(--warning);
+    color: var(--dark);
+  }
+  
+  .status.completed {
+    background-color: var(--success);
+    color: white;
+  }
+  
+  .order-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .detail {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: var(--gray);
+    font-size: 0.9rem;
+  }
+  
+  .value {
+    font-weight: 500;
+  }
+  
+  .order-address {
+    padding-top: 10px;
+    border-top: 1px solid var(--light-gray);
+  }
+  
+  .order-address p {
+    margin-top: 5px;
+    line-height: 1.4;
+  }
