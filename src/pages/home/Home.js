@@ -43,6 +43,36 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="about-section">
+        <div className="container">
+          <div className="about-content">
+            <div className="about-text">
+              <h2>About Us</h2>
+              <p>Founded in 2020, Neche's Laundry Service began with a simple mission: to provide busy individuals and families with premium laundry care that saves time and delivers exceptional results.</p>
+              <p>What sets us apart is our attention to detail, eco-friendly cleaning methods, and commitment to treating every garment as if it were our own. We use only high-quality, hypoallergenic detergents and state-of-the-art equipment to ensure your clothes look their best and last longer.</p>
+              <div className="about-stats">
+                <div className="stat">
+                  <h3>10,000+</h3>
+                  <p>Happy Customers</p>
+                </div>
+                <div className="stat">
+                  <h3>98%</h3>
+                  <p>Customer Satisfaction</p>
+                </div>
+                <div className="stat">
+                  <h3>24/7</h3>
+                  <p>Customer Support</p>
+                </div>
+              </div>
+            </div>
+            <div className="about-image">
+              <img src="/images/laundryteam.jpg" alt="Neche's Laundry Team" />
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };
